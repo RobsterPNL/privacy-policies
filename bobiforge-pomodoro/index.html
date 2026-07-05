@@ -11,12 +11,23 @@
         h3 { font-size: 1.05em; }
         a { color: #6750A4; }
         ul { padding-left: 1.5em; }
+        .lang-nav { margin: 0 0 1.5em; padding-bottom: 1em; border-bottom: 1px solid #e0e0e0; font-size: 0.95em; }
+        .lang-nav a { margin-right: 1em; font-weight: 600; }
+        .lang-section { padding-top: 1em; }
+        hr { border: none; border-top: 1px solid #e0e0e0; margin: 3em 0; }
     </style>
 </head>
 <body>
+    <nav class="lang-nav">
+        <a href="#en">English</a>
+        <a href="#pl">Polski</a>
+    </nav>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <section id="en" class="lang-section">
     <h1>Privacy Policy</h1>
     <p><strong>Pomodoro Timer</strong></p>
-    <p><em>Last updated: March 25, 2026</em></p>
+    <p><em>Last updated: July 5, 2026</em></p>
 
     <h2>Overview</h2>
     <p>Pomodoro Timer ("the App") is a productivity timer application for Android. Your privacy is important to us. This policy explains what data the App collects, how it is used, and your choices.</p>
@@ -52,9 +63,14 @@
     </ul>
     <p>This data is <strong>anonymous</strong> and is used solely to improve App stability. You can learn more at <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
 
+    <h2>Feedback You Choose to Send</h2>
+    <p>The App includes an <strong>optional</strong> in-app feedback form. If you use it, the message you write — together with a category (bug / suggestion / other), your app version, language, and platform — is stored in Firebase Firestore so we can review it.</p>
+    <p>The form also has <strong>optional Name and Email fields</strong>. You only need to fill them in if you would like a reply. If you provide them, we store them <strong>solely to respond to your feedback</strong> and for no other purpose. Leaving them blank is completely fine — the form works without them.</p>
+    <p>You can request deletion of any feedback data you have submitted (including your name and email) at any time by contacting us at the email address below.</p>
+
     <h2>Data We Do NOT Collect</h2>
     <ul>
-        <li>We do <strong>not</strong> collect your name, email, or any personal information</li>
+        <li>We do <strong>not</strong> collect your name or email <strong>unless you voluntarily provide them</strong> in the feedback form described above</li>
         <li>We do <strong>not</strong> collect your location</li>
         <li>We do <strong>not</strong> require an account or login</li>
         <li>We do <strong>not</strong> share or sell any data to third parties</li>
@@ -67,7 +83,74 @@
     <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
 
     <h2>Contact</h2>
-    <p>If you have questions about this Privacy Policy, contact us at:</p>
+    <p>If you have questions about this Privacy Policy, or would like your feedback data deleted, contact us at:</p>
     <p><strong>Email:</strong> bobiforge@gmail.com</p>
+    </section>
+
+    <hr>
+
+    <!-- ==================== POLSKI ==================== -->
+    <section id="pl" class="lang-section" lang="pl">
+    <h1>Polityka Prywatności</h1>
+    <p><strong>Pomodoro Timer</strong></p>
+    <p><em>Ostatnia aktualizacja: 5 lipca 2026</em></p>
+
+    <h2>Wprowadzenie</h2>
+    <p>Pomodoro Timer („Aplikacja") to aplikacja z timerem produktywności na Androida. Twoja prywatność jest dla nas ważna. Ta polityka wyjaśnia, jakie dane Aplikacja zbiera, jak są wykorzystywane i jakie masz wybory.</p>
+
+    <h2>Dane przechowywane na Twoim urządzeniu</h2>
+    <p>Aplikacja przechowuje następujące dane <strong>wyłącznie lokalnie na Twoim urządzeniu</strong>:</p>
+    <ul>
+        <li>Historia sesji timera (czas rozpoczęcia, czas trwania, zdobyte XP)</li>
+        <li>Postępy użytkownika (XP, poziom, passa, osiągnięcia)</li>
+        <li>Ustawienia aplikacji (długości timera, motyw, preferencje dźwięku)</li>
+    </ul>
+    <p>Te dane <strong>nigdy nie są przesyłane</strong> na żaden serwer. Pozostają na Twoim urządzeniu i są usuwane po odinstalowaniu Aplikacji.</p>
+
+    <h2>Dane zbierane przez usługi zewnętrzne</h2>
+    <p>Aplikacja korzysta z następujących usług zewnętrznych dostarczanych przez Google:</p>
+
+    <h3>Firebase Analytics</h3>
+    <p>Zbieramy anonimowe dane o użytkowaniu, aby zrozumieć, jak Aplikacja jest używana, i ją ulepszać. Obejmuje to:</p>
+    <ul>
+        <li>Otwarcia aplikacji i wyświetlenia ekranów</li>
+        <li>Zdarzenia użycia funkcji (np. ukończenie sesji, osiągnięcie poziomu)</li>
+        <li>Typ urządzenia, wersję systemu operacyjnego i język</li>
+        <li>Kraj/region (ustalany na podstawie adresu IP, który nie jest przechowywany)</li>
+    </ul>
+    <p>Te dane są <strong>anonimowe</strong> i nie mogą być użyte do zidentyfikowania Cię. Więcej informacji na <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
+
+    <h3>Firebase Crashlytics</h3>
+    <p>Zbieramy anonimowe raporty awarii, aby wykrywać i naprawiać błędy. Obejmuje to:</p>
+    <ul>
+        <li>Logi awarii i ślady stosu</li>
+        <li>Typ urządzenia i wersję systemu operacyjnego</li>
+        <li>Stan aplikacji w chwili awarii</li>
+    </ul>
+    <p>Te dane są <strong>anonimowe</strong> i służą wyłącznie poprawie stabilności Aplikacji. Więcej informacji na <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
+
+    <h2>Opinie, które zdecydujesz się wysłać</h2>
+    <p>Aplikacja zawiera <strong>opcjonalny</strong> formularz opinii. Jeśli z niego skorzystasz, napisana przez Ciebie wiadomość — wraz z kategorią (błąd / sugestia / inne), wersją aplikacji, językiem i platformą — jest zapisywana w Firebase Firestore, abyśmy mogli ją przejrzeć.</p>
+    <p>Formularz zawiera również <strong>opcjonalne pola Imię i E-mail</strong>. Musisz je wypełnić tylko wtedy, gdy chcesz otrzymać odpowiedź. Jeśli je podasz, przechowujemy je <strong>wyłącznie w celu odpowiedzi na Twoją opinię</strong> i w żadnym innym celu. Pozostawienie ich pustymi jest całkowicie w porządku — formularz działa bez nich.</p>
+    <p>W każdej chwili możesz poprosić o usunięcie przesłanych danych z opinii (w tym imienia i e-maila), kontaktując się z nami pod adresem podanym poniżej.</p>
+
+    <h2>Dane, których NIE zbieramy</h2>
+    <ul>
+        <li><strong>Nie</strong> zbieramy Twojego imienia ani e-maila, <strong>chyba że dobrowolnie je podasz</strong> w opisanym wyżej formularzu opinii</li>
+        <li><strong>Nie</strong> zbieramy Twojej lokalizacji</li>
+        <li><strong>Nie</strong> wymagamy konta ani logowania</li>
+        <li><strong>Nie</strong> udostępniamy ani nie sprzedajemy żadnych danych podmiotom trzecim</li>
+    </ul>
+
+    <h2>Prywatność dzieci</h2>
+    <p>Aplikacja świadomie nie zbiera żadnych danych osobowych od dzieci poniżej 13. roku życia. Aplikacja nie wymaga żadnych danych osobowych do działania.</p>
+
+    <h2>Zmiany w niniejszej Polityce</h2>
+    <p>Możemy od czasu do czasu aktualizować niniejszą Politykę Prywatności. Zmiany będą publikowane na tej stronie wraz ze zaktualizowaną datą. Dalsze korzystanie z Aplikacji po wprowadzeniu zmian oznacza akceptację zaktualizowanej polityki.</p>
+
+    <h2>Kontakt</h2>
+    <p>Jeśli masz pytania dotyczące niniejszej Polityki Prywatności lub chcesz, aby Twoje dane z opinii zostały usunięte, skontaktuj się z nami:</p>
+    <p><strong>E-mail:</strong> bobiforge@gmail.com</p>
+    </section>
 </body>
 </html>
