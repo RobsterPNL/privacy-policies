@@ -21,29 +21,68 @@
     <nav class="lang-nav">
         <a href="#en">English</a>
         <a href="#pl">Polski</a>
+        <a href="terms/">Terms of Use / Regulamin</a>
     </nav>
 
     <!-- ==================== ENGLISH ==================== -->
     <section id="en" class="lang-section">
     <h1>Privacy Policy</h1>
     <p><strong>Alchemy Lab</strong></p>
-    <p><em>Last updated: August 8, 2026</em></p>
+    <p><em>Last updated: September 20, 2026</em></p>
 
     <h2>Overview</h2>
-    <p>Alchemy Lab ("the App") is a color-sorting puzzle game for Android. Your privacy is important to us. This policy explains what data the App collects, how it is used, and your choices.</p>
+    <p>Alchemy Lab ("the App") is a color-sorting puzzle game for Android, published by BobiForge ("we"). Your privacy is important to us. This policy explains what data the App collects, how it is used, and your choices. The game works without an account. Some data leaves your device only if you use one of the optional features described below: the online ranking, rewarded ads, and anonymous analytics.</p>
 
     <h2>Data Stored on Your Device</h2>
-    <p>The App stores the following data <strong>locally on your device only</strong>:</p>
+    <p>The App stores the following data <strong>locally on your device</strong>:</p>
     <ul>
-        <li>Your current in-progress level (level number, move history)</li>
-        <li>Progress (highest level reached, completed levels, daily-challenge streak)</li>
-        <li>Play stats (total moves made) and unlocked achievements</li>
-        <li>App settings (theme, language, sound, colorblind-friendly symbols, and your analytics choice below)</li>
+        <li>Level progress and in-progress puzzle state</li>
+        <li>Statistics (levels solved, moves made, longest streak)</li>
+        <li>Achievement progress</li>
+        <li>Daily challenge streak and today's Daily score</li>
+        <li>Lives and ad-refill timers</li>
+        <li>App settings (theme, language, color-blind symbols, sound preference, consent choices)</li>
+        <li>If you use the ranking: your nickname, the terms version you accepted, and the list of players you hid</li>
     </ul>
-    <p>This data is <strong>never transmitted</strong> to any server. It stays on your device and is deleted when you uninstall the App.</p>
+    <p>Apart from the data described in the sections below, this data is <strong>not transmitted</strong> to any server. It is deleted when you uninstall the App.</p>
+
+    <h2>Online Ranking (optional)</h2>
+    <p>The App has an optional online ranking with two boards: campaign progress (all-time) and the Daily Challenge (today). <strong>You can play the whole game without ever joining it.</strong> Nothing is sent to the ranking until you tap "Join", choose a nickname and accept the <a href="terms/">Terms of Use</a>. Opening the ranking screen only reads the public boards.</p>
+
+    <h3>What is sent when you join</h3>
+    <ul>
+        <li>An <strong>anonymous player ID</strong> created by Firebase Authentication. It is a random identifier, not linked to your Google account, email or phone number.</li>
+        <li>The <strong>nickname</strong> you typed. Please do not use your real name or any personal information.</li>
+        <li>The <strong>highest level</strong> you have reached and the time you reached it.</li>
+        <li>Your <strong>Daily Challenge score</strong> for each day you play and the time you submitted it.</li>
+        <li>The version of the Terms of Use you accepted and the time you accepted it, as proof of acceptance.</li>
+        <li>Timestamps of when your entry was created and when you last changed your nickname.</li>
+    </ul>
+
+    <h3>Who can see it</h3>
+    <p><strong>Your nickname, level or score, and rank are public.</strong> Every player of the App can see them. Your anonymous player ID is part of the same records and is technically visible in them too, but it does not identify you.</p>
+
+    <h3>Reports</h3>
+    <p>If you report a player, we store your anonymous player ID, the reported player's ID and nickname at that moment, the board, the reason you chose, and the time. Reports are read only by us, to moderate the ranking, and are removed once handled or no longer needed. The player you report is also hidden on your device, and that list stays on your device.</p>
+
+    <h3>How long we keep it</h3>
+    <ul>
+        <li>Daily Challenge entries are deleted automatically after 3 days.</li>
+        <li>Your player record is deleted automatically after 365 days without any update from the App.</li>
+        <li>You can delete your data at any time: in the App choose "Leave ranking" (in your ranking profile) or "Reset data" in Settings. This removes your player record, your Daily entries and the anonymous account. If you reinstall the App you get a new anonymous ID, and the old record stays until it expires; if you want it removed sooner, email us with your old nickname.</li>
+    </ul>
+
+    <h3>Moderation</h3>
+    <p>We may hide or remove a player from the ranking if their nickname or scores break the Terms of Use. This is done by us, by hand, based on reports.</p>
+
+    <h3>Service provider</h3>
+    <p>The ranking is stored in Google Firebase (Cloud Firestore and Firebase Authentication), provided by Google. Data may be processed on Google servers outside your country. To protect the service from abuse, Firebase App Check with Google Play Integrity may verify that requests come from the genuine App on a genuine device; this sends device integrity signals to Google.</p>
+
+    <h2>Ads</h2>
+    <p>The App shows <strong>optional rewarded video ads</strong> that you can choose to watch, for example to regain lives. Ads are provided by Google AdMob. AdMob may collect and use your device's <strong>advertising ID</strong>, IP address and device and usage information to serve and measure ads. In the European Economic Area and the UK, the App shows Google's consent form before requesting an ad, and no ad is requested until you have answered it. You can also reset your advertising ID or opt out of ad personalisation in your device's Android settings (Settings &rarr; Google &rarr; Ads). You can learn more at <a href="https://policies.google.com/technologies/ads">How Google uses information from sites or apps that use its services</a>.</p>
 
     <h2>Your Choice: Analytics &amp; Crash Reports</h2>
-    <p>On first launch, the App asks whether you want to help improve it by sharing anonymous usage and crash data. <strong>Both are switched off by default</strong> and stay off until you explicitly agree. You can change your answer at any time in Settings — turning it off stops all further collection immediately.</p>
+    <p>On first launch, the App asks whether you want to help improve it by sharing anonymous usage and crash data. <strong>Both are switched off by default</strong> and stay off until you explicitly agree. You can change your answer at any time in Settings — turning it off stops all further collection immediately. This choice is separate from the ranking (which you join deliberately) and from ad consent (which Google's form manages).</p>
     <p>If you agree, the App uses the following third-party services provided by Google:</p>
 
     <h3>Firebase Analytics</h3>
@@ -51,10 +90,12 @@
     <ul>
         <li>App opens and screen views</li>
         <li>Gameplay events (e.g., level started, level completed, level abandoned, streak milestones reached, settings changed) along with bucketed difficulty and performance ranges (e.g., number of colors/vessels in a level, move-count range, time range) — not exact personal data</li>
+        <li>If you use the ranking: that you joined, left it or sent a report, and the reason category of the report (never your nickname)</li>
+        <li>Grouped progress information (for example, "levels completed: 6 to 20") rather than exact numbers</li>
         <li>Device type, operating system version, and language</li>
         <li>Country/region (derived from IP address, which is not stored)</li>
     </ul>
-    <p>This data is <strong>anonymous</strong> and cannot be used to identify you personally. You can learn more at <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
+    <p>This data does not contain your nickname and cannot be used by us to identify you personally. You can learn more at <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
 
     <h3>Firebase Crashlytics</h3>
     <p>We collect anonymous crash reports to identify and fix bugs. This includes:</p>
@@ -63,25 +104,28 @@
         <li>Device type and operating system version</li>
         <li>App state at the time of the crash</li>
     </ul>
-    <p>This data is <strong>anonymous</strong> and is used solely to improve App stability. You can learn more at <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
+    <p>This data is used solely to improve App stability. You can learn more at <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
 
     <h2>Data We Do NOT Collect</h2>
     <ul>
-        <li>We do <strong>not</strong> collect your name, email, or any personal information</li>
+        <li>We do <strong>not</strong> collect your real name, email address or phone number</li>
         <li>We do <strong>not</strong> collect your location</li>
-        <li>We do <strong>not</strong> require an account or login</li>
-        <li>We do <strong>not</strong> share or sell any data to third parties</li>
-        <li>We do <strong>not</strong> display advertisements</li>
+        <li>We do <strong>not</strong> require an account or login; the ranking uses an anonymous ID</li>
+        <li>We do <strong>not</strong> sell your data</li>
+        <li>We do <strong>not</strong> offer in-app purchases</li>
     </ul>
 
+    <h2>Your Rights</h2>
+    <p>You can ask us what data we hold about you, ask us to correct or delete it, and object to its processing. Most of this you can do yourself in the App (see "How long we keep it"). For anything else, or if you are in the European Economic Area and want to complain, contact us below; you also have the right to complain to your national data protection authority.</p>
+
     <h2>Children's Privacy</h2>
-    <p>The App does not knowingly collect any personal data from children under 13. The App does not require any personal information to function.</p>
+    <p>The App is not directed to children under 13, and we do not knowingly collect personal data from them. The game does not require any personal information to play. The online ranking is optional and its rules on age are in the <a href="terms/">Terms of Use</a>.</p>
 
     <h2>Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
 
     <h2>Contact</h2>
-    <p>If you have questions about this Privacy Policy, contact us at:</p>
+    <p>If you have questions about this Privacy Policy, want your ranking data deleted, or want to appeal a moderation decision, contact us at:</p>
     <p><strong>Email:</strong> bobiforge@gmail.com</p>
     </section>
 
@@ -91,23 +135,61 @@
     <section id="pl" class="lang-section" lang="pl">
     <h1>Polityka Prywatności</h1>
     <p><strong>Alchemy Lab</strong></p>
-    <p><em>Ostatnia aktualizacja: 8 sierpnia 2026</em></p>
+    <p><em>Ostatnia aktualizacja: 20 września 2026</em></p>
 
     <h2>Wprowadzenie</h2>
-    <p>Alchemy Lab („Aplikacja") to gra logiczna polegająca na sortowaniu kolorów, dostępna na Androida. Twoja prywatność jest dla nas ważna. Ta polityka wyjaśnia, jakie dane Aplikacja zbiera, jak są wykorzystywane i jakie masz wybory.</p>
+    <p>Alchemy Lab („Aplikacja") to gra logiczna polegająca na sortowaniu kolorów, dostępna na Androida, wydawana przez BobiForge („my"). Twoja prywatność jest dla nas ważna. Ta polityka wyjaśnia, jakie dane Aplikacja zbiera, jak są wykorzystywane i jakie masz wybory. Gra działa bez konta. Część danych opuszcza urządzenie tylko wtedy, gdy korzystasz z jednej z opcjonalnych funkcji opisanych niżej: rankingu online, nagradzanych reklam i anonimowej analityki.</p>
 
     <h2>Dane przechowywane na Twoim urządzeniu</h2>
-    <p>Aplikacja przechowuje następujące dane <strong>wyłącznie lokalnie na Twoim urządzeniu</strong>:</p>
+    <p>Aplikacja przechowuje następujące dane <strong>lokalnie na Twoim urządzeniu</strong>:</p>
     <ul>
-        <li>Bieżący, nieukończony poziom (numer poziomu, historia ruchów)</li>
-        <li>Postępy (najwyższy osiągnięty poziom, ukończone poziomy, passa wyzwań dziennych)</li>
-        <li>Statystyki gry (łączna liczba ruchów) i odblokowane osiągnięcia</li>
-        <li>Ustawienia aplikacji (motyw, język, dźwięk, symbole ułatwiające grę osobom z zaburzeniami rozpoznawania barw oraz Twoja zgoda na analitykę opisana poniżej)</li>
+        <li>Postęp w poziomach i stan rozpoczętej łamigłówki</li>
+        <li>Statystyki (rozwiązane poziomy, wykonane ruchy, najdłuższa seria)</li>
+        <li>Postęp w osiągnięciach</li>
+        <li>Serię wyzwania dziennego i dzisiejszy wynik Daily</li>
+        <li>Życia i liczniki odnawiania za reklamę</li>
+        <li>Ustawienia aplikacji (motyw, język, symbole dla osób z zaburzeniami widzenia barw, dźwięk, wybory dotyczące zgód)</li>
+        <li>Jeśli korzystasz z rankingu: Twój nick, wersję zaakceptowanego regulaminu i listę ukrytych graczy</li>
     </ul>
-    <p>Te dane <strong>nigdy nie są przesyłane</strong> na żaden serwer. Pozostają na Twoim urządzeniu i są usuwane po odinstalowaniu Aplikacji.</p>
+    <p>Poza danymi opisanymi w kolejnych sekcjach te dane <strong>nie są przesyłane</strong> na żaden serwer. Są usuwane po odinstalowaniu Aplikacji.</p>
+
+    <h2>Ranking online (opcjonalny)</h2>
+    <p>Aplikacja ma opcjonalny ranking online z dwiema tablicami: postęp kampanii (cały czas) i wyzwanie dzienne (dziś). <strong>Możesz przejść całą grę, nigdy do niego nie dołączając.</strong> Do rankingu nic nie jest wysyłane, dopóki nie klikniesz „Dołącz", nie wybierzesz nicku i nie zaakceptujesz <a href="terms/">Regulaminu</a>. Samo otwarcie ekranu rankingu tylko odczytuje publiczne tablice.</p>
+
+    <h3>Co jest wysyłane po dołączeniu</h3>
+    <ul>
+        <li><strong>Anonimowy identyfikator gracza</strong> utworzony przez Firebase Authentication. To losowy identyfikator, niepowiązany z Twoim kontem Google, adresem e-mail ani numerem telefonu.</li>
+        <li><strong>Nick</strong>, który wpisałeś(-aś). Prosimy, nie używaj imienia i nazwiska ani innych danych osobowych.</li>
+        <li><strong>Najwyższy poziom</strong>, który osiągnąłeś(-aś), i czas jego osiągnięcia.</li>
+        <li><strong>Wynik wyzwania dziennego</strong> z każdego dnia, w którym grasz, i czas jego wysłania.</li>
+        <li>Wersja Regulaminu, którą zaakceptowałeś(-aś), i czas akceptacji jako dowód zgody.</li>
+        <li>Znaczniki czasu utworzenia wpisu i ostatniej zmiany nicku.</li>
+    </ul>
+
+    <h3>Kto to widzi</h3>
+    <p><strong>Twój nick, poziom lub wynik i miejsce w rankingu są publiczne.</strong> Widzi je każdy gracz Aplikacji. Twój anonimowy identyfikator gracza jest częścią tych samych rekordów i technicznie też w nich widnieje, ale nie identyfikuje Cię.</p>
+
+    <h3>Zgłoszenia</h3>
+    <p>Jeśli zgłosisz gracza, zapisujemy Twój anonimowy identyfikator, identyfikator i nick zgłoszonego gracza z tej chwili, tablicę, wybrany powód i czas. Zgłoszenia czytamy tylko my, w celu moderacji rankingu, i usuwamy je po rozpatrzeniu lub gdy przestają być potrzebne. Zgłoszony gracz jest też ukrywany na Twoim urządzeniu, a ta lista zostaje na Twoim urządzeniu.</p>
+
+    <h3>Jak długo przechowujemy dane</h3>
+    <ul>
+        <li>Wpisy wyzwania dziennego są usuwane automatycznie po 3 dniach.</li>
+        <li>Rekord gracza jest usuwany automatycznie po 365 dniach bez żadnej aktualizacji z Aplikacji.</li>
+        <li>Swoje dane możesz usunąć w każdej chwili: w Aplikacji wybierz „Opuść ranking" (w profilu rankingowym) lub „Resetuj dane" w Ustawieniach. Usuwa to Twój rekord gracza, wpisy Daily i anonimowe konto. Po ponownej instalacji Aplikacji dostajesz nowy anonimowy identyfikator, a stary rekord zostaje do czasu wygaśnięcia; jeśli chcesz go usunąć wcześniej, napisz do nas, podając stary nick.</li>
+    </ul>
+
+    <h3>Moderacja</h3>
+    <p>Możemy ukryć lub usunąć gracza z rankingu, jeśli jego nick lub wyniki łamią Regulamin. Robimy to my, ręcznie, na podstawie zgłoszeń.</p>
+
+    <h3>Dostawca usługi</h3>
+    <p>Ranking jest przechowywany w Google Firebase (Cloud Firestore i Firebase Authentication), dostarczanym przez Google. Dane mogą być przetwarzane na serwerach Google poza Twoim krajem. Aby chronić usługę przed nadużyciami, Firebase App Check z Google Play Integrity może sprawdzać, czy żądania pochodzą z oryginalnej Aplikacji na prawdziwym urządzeniu; do Google trafiają wtedy sygnały o integralności urządzenia.</p>
+
+    <h2>Reklamy</h2>
+    <p>Aplikacja pokazuje <strong>opcjonalne nagradzane reklamy wideo</strong>, które możesz obejrzeć z własnego wyboru, na przykład aby odzyskać życia. Reklamy dostarcza Google AdMob. AdMob może zbierać i wykorzystywać <strong>identyfikator reklamowy</strong> urządzenia, adres IP oraz informacje o urządzeniu i użytkowaniu, aby wyświetlać reklamy i mierzyć ich skuteczność. W Europejskim Obszarze Gospodarczym i w Wielkiej Brytanii Aplikacja pokazuje formularz zgody Google przed żądaniem reklamy i żadna reklama nie jest żądana, dopóki na niego nie odpowiesz. Identyfikator reklamowy możesz też zresetować, a personalizację reklam wyłączyć w ustawieniach Androida (Ustawienia &rarr; Google &rarr; Reklamy). Więcej informacji: <a href="https://policies.google.com/technologies/ads?hl=pl">Jak Google wykorzystuje informacje z witryn lub aplikacji korzystających z jego usług</a>.</p>
 
     <h2>Twój wybór: Analityka i raporty awarii</h2>
-    <p>Przy pierwszym uruchomieniu Aplikacja pyta, czy chcesz pomóc ją ulepszać, udostępniając anonimowe dane o użytkowaniu i awariach. <strong>Oba te elementy są domyślnie wyłączone</strong> i pozostają wyłączone, dopóki wyraźnie się na nie nie zgodzisz. Swoją odpowiedź możesz zmienić w dowolnym momencie w Ustawieniach — wyłączenie natychmiast zatrzymuje dalsze zbieranie danych.</p>
+    <p>Przy pierwszym uruchomieniu Aplikacja pyta, czy chcesz pomóc ją ulepszać, udostępniając anonimowe dane o użytkowaniu i awariach. <strong>Oba te elementy są domyślnie wyłączone</strong> i pozostają wyłączone, dopóki wyraźnie się na nie nie zgodzisz. Swoją odpowiedź możesz zmienić w dowolnym momencie w Ustawieniach — wyłączenie natychmiast zatrzymuje dalsze zbieranie danych. Ten wybór jest odrębny od rankingu (do którego dołączasz świadomie) i od zgody na reklamy (którą obsługuje formularz Google).</p>
     <p>Jeśli wyrazisz zgodę, Aplikacja korzysta z następujących usług zewnętrznych dostarczanych przez Google:</p>
 
     <h3>Firebase Analytics</h3>
@@ -115,10 +197,12 @@
     <ul>
         <li>Otwarcia aplikacji i wyświetlenia ekranów</li>
         <li>Zdarzenia rozgrywki (np. rozpoczęcie poziomu, ukończenie poziomu, porzucenie poziomu, osiągnięcie progu passy, zmiana ustawień) wraz z przedziałami trudności i wyniku (np. liczba kolorów/naczyń na poziomie, przedział liczby ruchów, przedział czasu) — nie dokładne dane osobowe</li>
+        <li>Jeśli korzystasz z rankingu: że dołączyłeś(-aś), opuściłeś(-aś) go lub wysłałeś(-aś) zgłoszenie, oraz kategorię powodu zgłoszenia (nigdy Twój nick)</li>
+        <li>Pogrupowane informacje o postępie (np. „ukończone poziomy: 6 do 20") zamiast dokładnych liczb</li>
         <li>Typ urządzenia, wersję systemu operacyjnego i język</li>
         <li>Kraj/region (ustalany na podstawie adresu IP, który nie jest przechowywany)</li>
     </ul>
-    <p>Te dane są <strong>anonimowe</strong> i nie mogą być użyte do zidentyfikowania Cię. Więcej informacji na <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
+    <p>Te dane nie zawierają Twojego nicku i my nie możemy na ich podstawie zidentyfikować Cię osobiście. Więcej informacji na <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
 
     <h3>Firebase Crashlytics</h3>
     <p>Zbieramy anonimowe raporty awarii, aby wykrywać i naprawiać błędy. Obejmuje to:</p>
@@ -127,25 +211,28 @@
         <li>Typ urządzenia i wersję systemu operacyjnego</li>
         <li>Stan aplikacji w chwili awarii</li>
     </ul>
-    <p>Te dane są <strong>anonimowe</strong> i służą wyłącznie poprawie stabilności Aplikacji. Więcej informacji na <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
+    <p>Te dane służą wyłącznie poprawie stabilności Aplikacji. Więcej informacji na <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
 
     <h2>Dane, których NIE zbieramy</h2>
     <ul>
-        <li><strong>Nie</strong> zbieramy Twojego imienia, e-maila ani żadnych danych osobowych</li>
+        <li><strong>Nie</strong> zbieramy Twojego prawdziwego imienia i nazwiska, adresu e-mail ani numeru telefonu</li>
         <li><strong>Nie</strong> zbieramy Twojej lokalizacji</li>
-        <li><strong>Nie</strong> wymagamy konta ani logowania</li>
-        <li><strong>Nie</strong> udostępniamy ani nie sprzedajemy żadnych danych podmiotom trzecim</li>
-        <li><strong>Nie</strong> wyświetlamy reklam</li>
+        <li><strong>Nie</strong> wymagamy konta ani logowania; ranking używa anonimowego identyfikatora</li>
+        <li><strong>Nie</strong> sprzedajemy Twoich danych</li>
+        <li><strong>Nie</strong> oferujemy zakupów w aplikacji</li>
     </ul>
 
+    <h2>Twoje prawa</h2>
+    <p>Możesz zapytać nas, jakie dane o Tobie przechowujemy, poprosić o ich poprawienie lub usunięcie i sprzeciwić się ich przetwarzaniu. Większość z tego zrobisz sam(a) w Aplikacji (patrz „Jak długo przechowujemy dane"). W pozostałych sprawach lub jeśli chcesz złożyć skargę, skontaktuj się z nami poniżej; przysługuje Ci też prawo do skargi do krajowego organu ochrony danych (w Polsce: Prezes Urzędu Ochrony Danych Osobowych).</p>
+
     <h2>Prywatność dzieci</h2>
-    <p>Aplikacja świadomie nie zbiera żadnych danych osobowych od dzieci poniżej 13. roku życia. Aplikacja nie wymaga żadnych danych osobowych do działania.</p>
+    <p>Aplikacja nie jest skierowana do dzieci poniżej 13. roku życia i świadomie nie zbieramy od nich danych osobowych. Gra nie wymaga żadnych danych osobowych. Ranking online jest opcjonalny, a zasady dotyczące wieku są w <a href="terms/">Regulaminie</a>.</p>
 
     <h2>Zmiany w niniejszej Polityce</h2>
     <p>Możemy od czasu do czasu aktualizować niniejszą Politykę Prywatności. Zmiany będą publikowane na tej stronie wraz ze zaktualizowaną datą. Dalsze korzystanie z Aplikacji po wprowadzeniu zmian oznacza akceptację zaktualizowanej polityki.</p>
 
     <h2>Kontakt</h2>
-    <p>Jeśli masz pytania dotyczące niniejszej Polityki Prywatności, skontaktuj się z nami:</p>
+    <p>Jeśli masz pytania dotyczące tej Polityki Prywatności, chcesz usunąć dane z rankingu lub odwołać się od decyzji moderacyjnej, napisz do nas:</p>
     <p><strong>E-mail:</strong> bobiforge@gmail.com</p>
     </section>
 </body>
