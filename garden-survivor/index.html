@@ -8,6 +8,7 @@
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
         h1 { font-size: 1.6em; }
         h2 { font-size: 1.2em; margin-top: 1.5em; }
+        h3 { font-size: 1.05em; }
         a { color: #3E8E2B; }
         ul { padding-left: 1.5em; }
         .lang-nav { margin: 0 0 1.5em; padding-bottom: 1em; border-bottom: 1px solid #e0e0e0; font-size: 0.95em; }
@@ -26,23 +27,57 @@
     <section id="en" class="lang-section">
     <h1>Privacy Policy</h1>
     <p><strong>Garden Survivor</strong></p>
-    <p><em>Last updated: October 5, 2026</em></p>
+    <p><em>Last updated: October 28, 2026</em></p>
 
     <h2>Overview</h2>
-    <p>Garden Survivor ("the App") is a survival game for Android, published by BobiForge ("we"). This policy explains what data the App handles, where it goes, and your choices. The game works offline and without an account. Data leaves your device only through two optional Google services described below: Google Play Games, for the global leaderboard, and Google AdMob, for the rewarded ads you choose to watch.</p>
+    <p>Garden Survivor ("the App") is a survival game for Android, published by BobiForge ("we"). This policy explains what data the App handles, where it goes, and your choices. The game works offline and without an account. Data leaves your device only through two optional features described below: the online ranking, which uses Google Play Games and Google Firebase, and Google AdMob, for the rewarded ads you choose to watch.</p>
 
     <h2>Data Stored on Your Device</h2>
     <p>The App stores the following data <strong>locally on your device</strong>:</p>
     <ul>
         <li>Your best run: waves survived, time, pests defeated, the furthest garden area reached, and the date</li>
+        <li>Campaign progress: which difficulty levels you have won, and your seeds</li>
         <li>Skill tree progress and which abilities sit on your buttons</li>
         <li>Settings: vibration, joystick side, language, and whether you have seen the "How to play" card</li>
+        <li>If you joined the ranking: your ranking player ID and your Play Games name</li>
     </ul>
-    <p>This data is <strong>not sent</strong> to us or to any server. It is deleted when you uninstall the App or clear its data in Android settings.</p>
+    <p>Apart from the data described in the sections below, this data is <strong>not sent</strong> to us or to any server. It is deleted when you uninstall the App or clear its data in Android settings.</p>
 
-    <h2>Google Play Games (optional)</h2>
-    <p>The App can show a global leaderboard through Google Play Games. When you are signed in to Google Play Games, the App sends the number of waves you survived at the end of each run to the leaderboard, and asks for your position on it. Your Play Games profile name, avatar and score are visible to other players on that leaderboard, according to your Play Games settings. The App never sees your email address or your Google account details.</p>
-    <p>You can play without signing in; your record is then kept only on your device. Google Play Games is provided by Google and covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can manage or delete your Play Games profile and its data in the Google Play Games app or your Google account settings.</p>
+    <h2 id="ranking">Online Ranking (optional)</h2>
+    <p>The App has an optional online ranking: the top players by the most waves survived in a single run, with a badge for the highest difficulty level each player has won. <strong>You can play the whole game without ever joining it.</strong> Nothing is sent to the ranking, and you are not signed in to anything, until you tap "Join" and sign in with Google Play Games. Opening the ranking screen without joining sends nothing; for a player who has joined it only reads the public board. This section also contains the rules of the ranking; there are no separate terms to accept.</p>
+
+    <h3>What is sent when you join</h3>
+    <ul>
+        <li>You sign in with your <strong>Google Play Games</strong> account. Firebase Authentication then gives you a <strong>ranking player ID</strong>, a random identifier tied to that Play Games account, so you keep your place after reinstalling the App or on a new phone. Firebase keeps your Play Games player ID and gamer name with that account. The App never sees your email address or other Google account details.</li>
+        <li>Your Play Games <strong>gamer name</strong>, used as your name on the ranking. You set and change it in Google Play Games, not in the App; "Refresh name" in the App's Settings brings the ranking up to date.</li>
+        <li>The <strong>most waves</strong> you have survived in one run and the time it last grew.</li>
+        <li>Your <strong>badge level</strong>: the highest difficulty level (1 to 6) you have won, if any.</li>
+        <li>Timestamps of when your entry was created and when your name last changed.</li>
+    </ul>
+
+    <h3>Who can see it</h3>
+    <p><strong>Your gamer name, best waves, badge and place on the ranking are public.</strong> Every player of the App can see them. Your ranking player ID is part of the same records and is technically visible in them too, but it does not identify you.</p>
+
+    <h3>Ranking rules</h3>
+    <ul>
+        <li><strong>Age.</strong> The ranking is for players aged 13 or older. If you are under 16, or under the age of digital consent in your country, join only with the permission of a parent or guardian.</li>
+        <li><strong>Fair play.</strong> Scores must come from playing the game. Do not submit scores using a modified App, automation, tampering with the App or its data, or by exploiting errors in the service. We cannot verify every score, and we may remove scores that we believe are not genuine.</li>
+        <li><strong>How the board is sorted.</strong> Players are sorted by the most waves survived in one run; on equal scores, the player who reached the score first ranks higher.</li>
+        <li><strong>What we may do.</strong> If a gamer name or score breaks these rules, we may hide the player from the ranking or remove their entry, without prior warning when the breach is clear. Gamer names are also moderated by Google under the Google Play Games rules. If you think we made a mistake, email us with your gamer name and we will look at it again.</li>
+        <li><strong>Availability.</strong> The ranking is provided "as is" and depends on an online service, so it may be unavailable, slow, reset or changed, and we may end it. This does not affect playing the game offline. Nothing here limits any rights you have under mandatory consumer law.</li>
+    </ul>
+
+    <h3>How long we keep it</h3>
+    <ul>
+        <li>Your player record is deleted after 365 days without any update from the App, in our periodic cleanup.</li>
+        <li>You can delete your data at any time: in the App open Settings and choose "Leave the leaderboard". This removes your player record and your ranking account from our servers. If you can no longer open the App, email us with your gamer name and we will delete them for you. Leaving the ranking does not affect your game progress on your device, and you can join again later.</li>
+    </ul>
+
+    <h3>Moderation</h3>
+    <p>There is no report button in the App. We look at the board ourselves and act on what players send us by email, by hand, following the ranking rules above.</p>
+
+    <h3>Service providers</h3>
+    <p>Sign-in uses Google Play Games Services. The ranking is stored in Google Firebase (Cloud Firestore and Firebase Authentication). Both are provided by Google, and data may be processed on Google servers outside your country. To protect the service from abuse, Firebase App Check with Google Play Integrity may verify that requests come from the genuine App on a genuine device; this sends device integrity signals to Google. Google Play Games is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, and you can manage your Play Games profile in the Google Play Games app or your Google account settings.</p>
 
     <h2>Ads</h2>
     <p>The App shows <strong>no banners and no interstitial ads</strong>. The only ad is an <strong>optional rewarded video</strong> that you can choose to watch after the scarecrow falls, to get a second life. Ads are provided by Google AdMob. AdMob may collect and use your device's <strong>advertising ID</strong>, IP address and device and usage information to serve and measure ads.</p>
@@ -50,25 +85,25 @@
 
     <h2>Data We Do NOT Collect</h2>
     <ul>
-        <li>We do <strong>not</strong> collect your name, email address or phone number</li>
+        <li>We do <strong>not</strong> collect your real name, email address or phone number</li>
         <li>We do <strong>not</strong> collect your location</li>
         <li>We do <strong>not</strong> use analytics or crash-reporting services</li>
-        <li>We do <strong>not</strong> require an account; Google Play Games is optional</li>
+        <li>We do <strong>not</strong> require an account or login to play; only the optional ranking uses your Google Play Games account</li>
         <li>We do <strong>not</strong> sell your data</li>
         <li>We do <strong>not</strong> offer in-app purchases</li>
     </ul>
 
     <h2>Your Rights</h2>
-    <p>We hold no data about you on our own servers. Data on your device is under your control: clearing the App's data or uninstalling it removes it. For data held by Google Play Games or AdMob, use the Google tools linked above. If you have questions, or if you are in the European Economic Area and want to complain, contact us below; you also have the right to complain to your national data protection authority.</p>
+    <p>You can ask us what data we hold about you, ask us to correct or delete it, and object to its processing. We hold data about you only if you joined the ranking, and you can delete it yourself in the App (see "How long we keep it" under "Online Ranking"). Data on your device is under your control: clearing the App's data or uninstalling it removes it. For data held by AdMob, use the Google tools linked above. For anything else, or if you are in the European Economic Area and want to complain, contact us below; you also have the right to complain to your national data protection authority.</p>
 
     <h2>Children's Privacy</h2>
-    <p>The App is not directed to children under 13, and we do not knowingly collect personal data from them. The game does not ask for any personal information.</p>
+    <p>The App is not directed to children under 13, and we do not knowingly collect personal data from them. The game does not ask for any personal information. The online ranking is optional and open to players aged 13 or older (see <a href="#ranking">Ranking rules</a>).</p>
 
     <h2>Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.</p>
 
     <h2>Contact</h2>
-    <p>If you have questions about this Privacy Policy, contact us at:</p>
+    <p>If you have questions about this Privacy Policy, want your ranking data deleted, or want to appeal a moderation decision, contact us at:</p>
     <p><strong>Email:</strong> bobiforge@gmail.com</p>
     </section>
 
@@ -78,23 +113,57 @@
     <section id="pl" class="lang-section" lang="pl">
     <h1>Polityka Prywatności</h1>
     <p><strong>Garden Survivor</strong></p>
-    <p><em>Ostatnia aktualizacja: 5 października 2026</em></p>
+    <p><em>Ostatnia aktualizacja: 28 października 2026</em></p>
 
     <h2>Wprowadzenie</h2>
-    <p>Garden Survivor („Aplikacja") to gra survivalowa na Androida, wydawana przez BobiForge („my"). Ta polityka wyjaśnia, jakie dane Aplikacja przetwarza, dokąd trafiają i jakie masz wybory. Gra działa offline i bez konta. Dane opuszczają Twoje urządzenie wyłącznie przez dwie opcjonalne usługi Google opisane niżej: Google Play Games, dla globalnego rankingu, oraz Google AdMob, dla nagradzanych reklam, które sam(a) wybierasz.</p>
+    <p>Garden Survivor („Aplikacja") to gra survivalowa na Androida, wydawana przez BobiForge („my"). Ta polityka wyjaśnia, jakie dane Aplikacja przetwarza, dokąd trafiają i jakie masz wybory. Gra działa offline i bez konta. Dane opuszczają Twoje urządzenie wyłącznie przez dwie opcjonalne funkcje opisane niżej: ranking online, który korzysta z Google Play Games i Google Firebase, oraz Google AdMob, dla nagradzanych reklam, które sam(a) wybierasz.</p>
 
     <h2>Dane przechowywane na Twoim urządzeniu</h2>
     <p>Aplikacja przechowuje następujące dane <strong>lokalnie na Twoim urządzeniu</strong>:</p>
     <ul>
         <li>Twoją najlepszą rundę: przetrwane fale, czas, pokonane szkodniki, najdalszy zakątek ogrodu i datę</li>
+        <li>Postęp w kampanii: które poziomy trudności wygrałeś(-aś) i Twoje nasiona</li>
         <li>Postęp w drzewku umiejętności i to, które zdolności są przypisane do przycisków</li>
         <li>Ustawienia: wibracje, strona joysticka, język i to, czy karta „Jak grać" była już pokazana</li>
+        <li>Jeśli dołączyłeś(-aś) do rankingu: Twój identyfikator gracza w rankingu i Twoją nazwę z Play Games</li>
     </ul>
-    <p>Te dane <strong>nie są wysyłane</strong> do nas ani na żaden serwer. Są usuwane po odinstalowaniu Aplikacji lub wyczyszczeniu jej danych w ustawieniach Androida.</p>
+    <p>Poza danymi opisanymi w kolejnych sekcjach te dane <strong>nie są wysyłane</strong> do nas ani na żaden serwer. Są usuwane po odinstalowaniu Aplikacji lub wyczyszczeniu jej danych w ustawieniach Androida.</p>
 
-    <h2>Google Play Games (opcjonalnie)</h2>
-    <p>Aplikacja może pokazywać globalny ranking przez Google Play Games. Gdy jesteś zalogowany(-a) do Google Play Games, Aplikacja po każdej rundzie wysyła do rankingu liczbę przetrwanych fal i pyta o Twoją pozycję. Twoja nazwa profilu Play Games, awatar i wynik są widoczne dla innych graczy w tym rankingu, zgodnie z Twoimi ustawieniami Play Games. Aplikacja nigdy nie widzi Twojego adresu e-mail ani danych konta Google.</p>
-    <p>Możesz grać bez logowania; Twój rekord zostaje wtedy tylko na Twoim urządzeniu. Google Play Games dostarcza Google i obejmuje go <a href="https://policies.google.com/privacy?hl=pl">Polityka prywatności Google</a>. Profilem Play Games i jego danymi zarządzasz w aplikacji Google Play Games lub w ustawieniach konta Google.</p>
+    <h2 id="ranking-pl">Ranking online (opcjonalny)</h2>
+    <p>Aplikacja ma opcjonalny ranking online: najlepsi gracze według największej liczby fal przetrwanych w jednej rundzie, z odznaką za najwyższy poziom trudności, który dany gracz wygrał. <strong>Możesz przejść całą grę, nigdy do niego nie dołączając.</strong> Do rankingu nic nie jest wysyłane i nigdzie nie jesteś logowany(-a), dopóki nie klikniesz „Dołącz" i nie zalogujesz się przez Google Play Games. Otwarcie ekranu rankingu bez dołączenia nic nie wysyła; gdy już dołączysz, ekran tylko odczytuje publiczną tablicę. Ta sekcja zawiera też zasady rankingu; nie ma osobnego regulaminu do akceptowania.</p>
+
+    <h3>Co jest wysyłane po dołączeniu</h3>
+    <ul>
+        <li>Logujesz się kontem <strong>Google Play Games</strong>. Firebase Authentication nadaje Ci wtedy <strong>identyfikator gracza w rankingu</strong>, losowy identyfikator powiązany z tym kontem Play Games, dzięki czemu zachowujesz swoje miejsce po ponownej instalacji Aplikacji lub na nowym telefonie. Firebase przechowuje przy tym koncie Twój identyfikator gracza Play Games i nazwę gracza. Aplikacja nigdy nie widzi Twojego adresu e-mail ani innych danych konta Google.</li>
+        <li>Twoja <strong>nazwa gracza</strong> z Play Games, używana jako Twoja nazwa w rankingu. Ustawiasz i zmieniasz ją w Google Play Games, nie w Aplikacji; „Odśwież nazwę" w Ustawieniach Aplikacji aktualizuje ją w rankingu.</li>
+        <li><strong>Największa liczba fal</strong> przetrwanych w jednej rundzie i czas, w którym ostatnio wzrosła.</li>
+        <li>Twój <strong>poziom odznaki</strong>: najwyższy wygrany poziom trudności (od 1 do 6), jeśli jakiś wygrałeś(-aś).</li>
+        <li>Znaczniki czasu utworzenia wpisu i ostatniej zmiany nazwy.</li>
+    </ul>
+
+    <h3>Kto to widzi</h3>
+    <p><strong>Twoja nazwa gracza, najlepszy wynik w falach, odznaka i miejsce w rankingu są publiczne.</strong> Widzi je każdy gracz Aplikacji. Twój identyfikator gracza w rankingu jest częścią tych samych rekordów i technicznie też w nich widnieje, ale nie identyfikuje Cię.</p>
+
+    <h3>Zasady rankingu</h3>
+    <ul>
+        <li><strong>Wiek.</strong> Ranking jest dla graczy w wieku 13 lat lub więcej. Jeśli masz mniej niż 16 lat albo mniej niż wynosi wiek zgody cyfrowej w Twoim kraju, dołączaj tylko za zgodą rodzica lub opiekuna.</li>
+        <li><strong>Uczciwa gra.</strong> Wyniki muszą pochodzić z gry. Nie wysyłaj wyników przy użyciu zmodyfikowanej Aplikacji, automatyzacji, ingerencji w Aplikację lub jej dane ani wykorzystując błędy usługi. Nie możemy sprawdzić każdego wyniku i możemy usunąć wyniki, które uznamy za nieprawdziwe.</li>
+        <li><strong>Jak układana jest tablica.</strong> Gracze są ułożeni według największej liczby fal przetrwanych w jednej rundzie; przy równych wynikach wyżej jest ten, kto pierwszy go osiągnął.</li>
+        <li><strong>Co możemy zrobić.</strong> Jeśli nazwa gracza lub wynik łamie te zasady, możemy ukryć gracza w rankingu lub usunąć jego wpis, przy wyraźnym naruszeniu bez wcześniejszego ostrzeżenia. Nazwy graczy moderuje też Google zgodnie z zasadami Google Play Games. Jeśli uważasz, że popełniliśmy błąd, napisz do nas, podając swoją nazwę gracza, a rozpatrzymy sprawę ponownie.</li>
+        <li><strong>Dostępność.</strong> Ranking jest udostępniany „w stanie, w jakim jest" i zależy od usługi online, więc może być niedostępny, wolny, zresetowany lub zmieniony, a my możemy go zakończyć. Nie wpływa to na grę offline. Nic tutaj nie ogranicza Twoich praw wynikających z obowiązujących przepisów o ochronie konsumentów.</li>
+    </ul>
+
+    <h3>Jak długo przechowujemy dane</h3>
+    <ul>
+        <li>Rekord gracza jest usuwany po 365 dniach bez żadnej aktualizacji z Aplikacji, w ramach naszego okresowego czyszczenia.</li>
+        <li>Swoje dane możesz usunąć w każdej chwili: w Aplikacji otwórz Ustawienia i wybierz „Wyjdź z rankingu". Usuwa to z naszych serwerów Twój rekord gracza i konto rankingowe. Jeśli nie możesz już otworzyć Aplikacji, napisz do nas, podając nazwę gracza, a usuniemy je za Ciebie. Wyjście z rankingu nie wpływa na Twój postęp w grze na urządzeniu, a później możesz dołączyć ponownie.</li>
+    </ul>
+
+    <h3>Moderacja</h3>
+    <p>W Aplikacji nie ma przycisku zgłaszania. Sami przeglądamy tablicę i reagujemy na to, co gracze przysyłają nam e-mailem, ręcznie, według powyższych zasad rankingu.</p>
+
+    <h3>Dostawcy usług</h3>
+    <p>Logowanie korzysta z Google Play Games Services. Ranking jest przechowywany w Google Firebase (Cloud Firestore i Firebase Authentication). Obie usługi dostarcza Google, a dane mogą być przetwarzane na serwerach Google poza Twoim krajem. Aby chronić usługę przed nadużyciami, Firebase App Check z Google Play Integrity może sprawdzać, czy żądania pochodzą z oryginalnej Aplikacji na prawdziwym urządzeniu; do Google trafiają wtedy sygnały o integralności urządzenia. Google Play Games obejmuje <a href="https://policies.google.com/privacy?hl=pl">Polityka prywatności Google</a>, a profilem Play Games zarządzasz w aplikacji Google Play Games lub w ustawieniach konta Google.</p>
 
     <h2>Reklamy</h2>
     <p>Aplikacja <strong>nie pokazuje banerów ani reklam pełnoekranowych przerywających grę</strong>. Jedyna reklama to <strong>opcjonalna nagradzana reklama wideo</strong>, którą możesz obejrzeć z własnego wyboru, gdy Strach padnie, aby dostać drugie życie. Reklamy dostarcza Google AdMob. AdMob może zbierać i wykorzystywać <strong>identyfikator reklamowy</strong> urządzenia, adres IP oraz informacje o urządzeniu i użytkowaniu, aby wyświetlać reklamy i mierzyć ich skuteczność.</p>
@@ -102,25 +171,25 @@
 
     <h2>Dane, których NIE zbieramy</h2>
     <ul>
-        <li><strong>Nie</strong> zbieramy Twojego imienia i nazwiska, adresu e-mail ani numeru telefonu</li>
+        <li><strong>Nie</strong> zbieramy Twojego prawdziwego imienia i nazwiska, adresu e-mail ani numeru telefonu</li>
         <li><strong>Nie</strong> zbieramy Twojej lokalizacji</li>
         <li><strong>Nie</strong> korzystamy z usług analitycznych ani raportowania awarii</li>
-        <li><strong>Nie</strong> wymagamy konta; Google Play Games jest opcjonalne</li>
+        <li><strong>Nie</strong> wymagamy konta ani logowania do gry; kontem Google Play Games posługuje się tylko opcjonalny ranking</li>
         <li><strong>Nie</strong> sprzedajemy Twoich danych</li>
         <li><strong>Nie</strong> oferujemy zakupów w aplikacji</li>
     </ul>
 
     <h2>Twoje prawa</h2>
-    <p>Nie przechowujemy żadnych danych o Tobie na własnych serwerach. Dane na Twoim urządzeniu są pod Twoją kontrolą: wyczyszczenie danych Aplikacji lub jej odinstalowanie je usuwa. W sprawie danych przechowywanych przez Google Play Games lub AdMob skorzystaj z narzędzi Google podlinkowanych wyżej. Jeśli masz pytania lub chcesz złożyć skargę, skontaktuj się z nami poniżej; przysługuje Ci też prawo do skargi do krajowego organu ochrony danych (w Polsce: Prezes Urzędu Ochrony Danych Osobowych).</p>
+    <p>Możesz zapytać nas, jakie dane o Tobie przechowujemy, poprosić o ich poprawienie lub usunięcie i sprzeciwić się ich przetwarzaniu. Przechowujemy dane o Tobie tylko wtedy, gdy dołączysz do rankingu, i możesz je usunąć sam(a) w Aplikacji (patrz „Jak długo przechowujemy dane" w sekcji o rankingu). Dane na Twoim urządzeniu są pod Twoją kontrolą: wyczyszczenie danych Aplikacji lub jej odinstalowanie je usuwa. W sprawie danych przechowywanych przez AdMob skorzystaj z narzędzi Google podlinkowanych wyżej. W pozostałych sprawach lub jeśli chcesz złożyć skargę, skontaktuj się z nami poniżej; przysługuje Ci też prawo do skargi do krajowego organu ochrony danych (w Polsce: Prezes Urzędu Ochrony Danych Osobowych).</p>
 
     <h2>Prywatność dzieci</h2>
-    <p>Aplikacja nie jest skierowana do dzieci poniżej 13. roku życia i świadomie nie zbieramy od nich danych osobowych. Gra nie prosi o żadne dane osobowe.</p>
+    <p>Aplikacja nie jest skierowana do dzieci poniżej 13. roku życia i świadomie nie zbieramy od nich danych osobowych. Gra nie prosi o żadne dane osobowe. Ranking online jest opcjonalny i przeznaczony dla graczy w wieku 13 lat lub więcej (patrz <a href="#ranking-pl">Zasady rankingu</a>).</p>
 
     <h2>Zmiany w niniejszej Polityce</h2>
     <p>Możemy od czasu do czasu aktualizować niniejszą Politykę Prywatności. Zmiany będą publikowane na tej stronie wraz ze zaktualizowaną datą.</p>
 
     <h2>Kontakt</h2>
-    <p>Jeśli masz pytania dotyczące tej Polityki Prywatności, napisz do nas:</p>
+    <p>Jeśli masz pytania dotyczące tej Polityki Prywatności, chcesz usunąć dane z rankingu lub odwołać się od decyzji moderacyjnej, napisz do nas:</p>
     <p><strong>E-mail:</strong> bobiforge@gmail.com</p>
     </section>
 </body>
